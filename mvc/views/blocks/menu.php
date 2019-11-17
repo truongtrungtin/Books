@@ -1,33 +1,19 @@
 <ul id="loaiSach" class="list-group">
 
-  <li class="list-group-item">
-    <a href="./SanPham/SPTheoLoai/99">  
-        Android
-    </a>
-  </li>
+  <?php
+  $mangCategory = json_decode($data["categories"]) ;
+  foreach($mangCategory as $cate){
+  ?>
 
   <li class="list-group-item">
-    <a href="./SanPham/SPTheoLoai/99">  
-        iOS
-    </a>
+      <a href="./SanPham/SPTheoLoai/<?php echo $cate->id ?>">  
+          <?php echo $cate->name ?>
+      </a>
   </li>
 
-  <li class="list-group-item">
-    <a href="./SanPham/SPTheoLoai/99">  
-        PHP
-    </a>
-  </li>
-
-  <li class="list-group-item">
-    <a href="./SanPham/SPTheoLoai/99">  
-        NODEJS
-    </a>
-  </li>
-
-  <li class="list-group-item">
-    <a href="./SanPham/SPTheoLoai/99">  
-        MongoDB
-    </a>
-  </li>
+  <?php
+  }
+  ?>
+  
   
 </ul>

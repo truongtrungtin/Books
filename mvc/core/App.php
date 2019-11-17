@@ -7,7 +7,7 @@ class App{
 
     public function __construct(){
         $url = $this->UrlProcess(); 
-        // http://localhost/admin/Home/Goodbye/1/2
+        // http://localhost/admin/Home/
         
         //Controller
         if( file_exists("./mvc/controllers/".$url[0].".php") ){

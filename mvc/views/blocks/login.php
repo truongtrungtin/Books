@@ -3,6 +3,8 @@
     Login
   </div>
   <div class="card-body">
-    Login
+    Login - 
+    
+    <a href="./Register">Register</a>
   </div>
 </div>

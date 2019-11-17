@@ -6,7 +6,7 @@ class DB{
     protected $server = "localhost";
     protected $username = "root";
     protected $password = "";
-    protected $dbname = "mvc";
+    protected $dbname = "bookshop";
 
     public function __construct(){
 
